@@ -1,0 +1,31 @@
+
+h1
+{
+  color: rgb(243, 179, 179);
+  text-align: center;
+}
+
+
+.me{
+  width: 400px;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+.card{
+  margin:2rem ;
+}
+
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-content{
+  margin: 1rem;
+}
+

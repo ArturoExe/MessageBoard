@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Posts{% endblock title %}
+
+{% block content %}
+<h1>Posts</h1>
+
+    {% for post in post_list %}
+
+    <div class="card">
+        <div class="card-header">
+            <h2>{{post.title}}</h2>
+            <h5>Post #{{post.id}}</h5>
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>{{post.body|truncatechars:200}}</p>
+            <footer class="blockquote-footer"><a href="{% url 'post_detail' post.id %}">continue reading</a></footer>
+          </blockquote>
+        </div>
+      </div>
+          
+        
+    {% endfor %}
+
+{% endblock content %}
